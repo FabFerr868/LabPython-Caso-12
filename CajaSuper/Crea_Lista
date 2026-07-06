@@ -1,0 +1,6 @@
+# El archivo fue creado con: 
+# x = open("lista_productos.txt", "x")
+# Para evitar el error "FileExistsError" se continuara con:
+x = open("CajaSuper/lista_productos.txt", "w")
+x.writelines (["1001;LECHE ENTERA 2L;1999.99;0.90", "\n1002;GASEOSA COLA REGULAR 1.5L;3199.99;0.70", "\n1003;PAN BLANCO 460GR;3799.99;0.90"])
+x.close()
