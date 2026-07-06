@@ -7,5 +7,8 @@
  - **Duarte Mikunda Melanie Milagros** | USUARIO: @Melii17
  - **Barrios Sosa Lionel Alejandro** | 
  - **Coffa Mario Alejandro** | USUARIO: @M4rio018
+# Uso de IA
+Aqui se encontrarán todas las aplicaciones de cada IA por parte de los integrantes en el desarrollo del trabajo
+ - Se uso ChatGPT para la implementación de la función *buscar_producto* en **Sistema_Principal**, que fué luego adaptada al trabajo
 
 # Caja de Supermercado:
