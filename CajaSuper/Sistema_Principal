@@ -22,14 +22,22 @@ codigo_ingresado = input("Ingresar Producto: ")
 producto = buscar_producto(codigo_ingresado) # Se asigna el valor de retorno de la funcion a la variable
 if producto is not None:
     codigo, nombre, precio, descuento = producto
+
+    precio = float(precio)
+    descuento = float(descuento)
+
+    monto_descuento = precio * descuento / 100
+    total = precio - monto_descuento
+
     print("Código:", codigo)
     print("Nombre:", nombre)
-    print("Precio:", precio)
-    print("Descuento:", descuento)
+    print("Precio: $", precio)
+    print("Descuento:", descuento, "%")
+    print("Monto descontado: $", monto_descuento)
+    print("Total a pagar: $", total)
+
 else:
     print("Producto no encontrado.")
-
-
 
 
 
