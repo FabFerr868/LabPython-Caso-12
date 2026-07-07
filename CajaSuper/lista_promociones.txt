@@ -1,0 +1,4 @@
+0;Sin descuento
+5;Promoción semanal
+40;Black Friday
+50;2x1
