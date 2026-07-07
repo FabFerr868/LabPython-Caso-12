@@ -1,21 +1,33 @@
+    # Creamos un diccionario para los productos fuera de la función para que sea global
 def buscar_producto(codigo_ingresado):
-    with open("CajaSuper/lista_productos.txt", "r") as var: 
-        # Esto abre el archivo .txt en modo lectura de manera que cierre al terminar la acción
+    try:
+        with open("CajaSuper/lista_productos.txt", "r") as var: 
+            # Esto abre el archivo .txt en modo lectura de manera que cierre al terminar la acción
 
-        for producto in var:
+            for linea in var:
 
-            codigo, nombre, precio, descuento = producto.strip().split(";") 
-            #codigo, nombre y precio se capturan por separado en su orden respectivamente 
-            #usando string().split(";") para dividir el texto con el ; del archivo
-            if codigo == codigo_ingresado:
-                return producto
-            # Asi se guardan los datos fuera de la función para realizar el pago
-    return print("Se produjo un error") 
-    # En caso de que el codigo sea invalido
-            
+                codigo, nombre, precio, descuento = linea.strip().split(";") 
+                #codigo, nombre y precio se capturan por separado en su orden respectivamente 
+                #usando string().split(";") para dividir el texto con el ; del archivo
+                if codigo == codigo_ingresado:
+                    
+                    return codigo, nombre, precio, descuento
+                # Asi se guardan los datos fuera de la función para realizar el pago
+    except FileNotFoundError:
+            print("No se encontró la lista de productos")
+            return None
+        # En caso de que el codigo sea invalido
 
-codigo_ingresado = input("Ingresar Producto")
-buscar_producto(codigo_ingresado) # Falta todavia..............
+codigo_ingresado = input("Ingresar Producto: ")
+producto = buscar_producto(codigo_ingresado) # Se asigna el valor de retorno de la funcion a la variable
+if producto is not None:
+    codigo, nombre, precio, descuento = producto
+    print("Código:", codigo)
+    print("Nombre:", nombre)
+    print("Precio:", precio)
+    print("Descuento:", descuento)
+else:
+    print("Producto no encontrado.")
 
 
 
