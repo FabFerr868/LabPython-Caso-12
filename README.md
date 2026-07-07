@@ -3,8 +3,7 @@
 
 # Integrantes:
  - **Ferrario Sanchez Fabrizio Eduardo** | USUARIO: @FabFerr868
- - **Gimenez Gabriel** | q
- - USUARIO: @gabrielgimenez358-byte
+ - **Gimenez Gabriel** | USUARIO: @gabrielgimenez358-byte
  - **Duarte Mikunda Melanie Milagros** | USUARIO: @Melii17
  - **Barrios Sosa Lionel Alejandro** | 
  - **Coffa Mario Alejandro** | USUARIO: @M4rio018
