@@ -1,4 +1,4 @@
-    # Creamos un diccionario para los productos fuera de la función para que sea global
+
 def buscar_producto(codigo_ingresado):
     try:
         with open("CajaSuper/lista_productos.txt", "r") as var: 
